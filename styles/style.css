@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    font-family: Verdana;
+}
+body{
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CV_Wrapp{
+    padding-top: 30px;
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    height: 700px;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "a b"
+        "c d"
+        "e d";
+}
+.Picture_area {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.Name_About_area{
+    grid-area: b;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+.Name{
+    color:blueviolet;
+    font-size: 5vw;
+}
+.Name:hover{
+    text-shadow: 2px 2px 0px white;
+}
+.List_Jobs{
+    font-size: 1.7vw;
+}
+.Contact_area {
+    grid-area: c;
+    background-color: blueviolet;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 20px;
+}
+.Experience_area {
+    grid-area: d;
+}
+.Skills_area {
+    grid-area: e;
+}
+.Me{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+}
+.About{
+    margin-top: 10px;
+}
